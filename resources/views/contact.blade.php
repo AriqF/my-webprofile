@@ -16,7 +16,12 @@
                 <h5 style="margin-bottom: 32px">Very Happy To Have Further Discussion</h5>
                 <div class="row">
                     <div class="col-xl-6 col-lg-12 col-md-12">
-                        <form class="needs-validation">
+                        @if(Session::has('message_sent'))
+                            <div class="alert alert-success" role="alert">
+                                {{Session::get('message_sent')}}
+                            </div>
+                        @endif
+                        <form class="needs-validation" method="POST" enctype="multipart/form-data" action="{{route('contact.send')}}">
                             @csrf
                             <div class="form-floating mb-3">
                                 <input id="name" type="text" class="form-control" name="name" placeholder="Your Name" required autofocus>            
@@ -34,7 +39,7 @@
                             </div>
                             
                             <div class="d-grid">
-                                <a class="btnr btnr-red" href="#" type="submit" style="padding: 12px 42px"><i class="far fa-paper-plane"></i> Kirim</a>
+                                <button class="btnr btnr-red" type="submit" style="padding: 12px 42px"><i class="far fa-paper-plane"></i> Kirim</button>
                             </div>
                         </form>
                     </div>
@@ -45,7 +50,10 @@
                             <li ><i class="far fa-envelope"></i> ariqfachry2611@gmail.com</li>
                         </ul>
                         <div id="quotes" class="pl-0 fadeInUp">
-                            <h4 class="text-muted">"Skill is fine, and genius is splendid, but the rights contacts are more valuable than either"</h4>
+                            <h4 class="text-muted">
+                                "Skill is fine, and genius is splendid, but the rights contacts are more valuable than either"
+                                <small>- Arthur Conan Doyle</small>
+                            </h4>
                         </div>
                     </div>
                 </div>

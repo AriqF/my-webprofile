@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,9 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('projects');
 });
-Route::get('/contact', function () {
-    return view('contact');
-});
 Route::get('/resume', function () {
     return view('resume');
 });
+Route::get('/contact', [ContactController::class, 'contact']);
+Route::post('/send-message', [ContactController::class, 'sendEmail'])->name('contact.send');
