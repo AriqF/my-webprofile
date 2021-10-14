@@ -1,0 +1,205 @@
+@import url("fonts.css");
+
+/* page layouts */
+html{
+    scroll-behavior: smooth;
+}
+body:before {
+    position: fixed;
+    top: 500px;
+    left: -100px;
+    bottom: 0;
+    content: '';
+    width: 400px;
+    height: 400px;
+    border: 2px solid rgba(155, 255, 255, 0.05);
+    z-index: -1;
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+body:after {
+    position: fixed;
+    top: -150px;
+    right: -50px;
+    bottom: 0;
+    content: '';
+    width: 400px;
+    height: 600px;
+    border: 2px solid rgba(155, 255, 255, 0.05);
+    z-index: -1;
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+}
+#nav{
+    font-family: MarkProMedium;
+    font-size: 18px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+#brand{
+    font-family: MarkProMedium;
+    font-size: 18px;
+}
+.page-section{
+    background-color: transparent;
+    color: #fff;
+    font-family: MarkProMedium;
+    padding-bottom: 18px;
+}
+/* buttons */
+.btnr{
+    padding: 13px 28px;
+    font-family: MarkProMedium;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-out;
+}
+.btnrs{
+    padding: 13px 22px;
+    font-family: MarkProMedium;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-out;
+}
+.btnr:hover, .btnrs:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+.btnr-red{
+    background-color: #DA0037;
+    color: #fff;
+}
+.btnr-red:hover{
+    background-color: #C60133;
+}
+.btnr-trans{
+    background-color: transparent;
+    border: 1px solid #ECEBEB;
+    color: #fff;
+}
+.btnr-trans:hover{
+    background-color: #ECEBEB;
+    color: #000;
+}
+.btnr-git{
+    background-color: #6e5494;
+    color: #fff;
+}
+.btnr-git:hover{
+    background-color: #624A84;
+}
+
+/* others */
+.pl-0{
+    padding-left: 0 !important;
+}
+.ls-1{
+    letter-spacing: 1px;
+}
+.sns{
+    cursor: pointer;
+    text-decoration: none;
+    color: #007dda;
+    margin: 4px 8px;
+    transition: color 0.3s ease-in-out;
+}
+.sns:hover{
+    color: #F7F7F7;
+}
+.progress{
+    background: #2A2929 !important;
+}
+.progress-bar{
+    background: #DA0037 !important;
+}
+
+/* animation */
+.fadeInRight{
+    animation: fadeInRight 1s ease;
+}
+.fadeInLeft{
+    animation: fadeInLeft 1s ease;
+}
+.fadeInUp{
+    animation: fadeInUp 1s ease;
+}
+.fadeInDown{
+    animation: fadeInDown 1s ease;
+}
+.slideBoxAnim{
+    animation: slideBox 3s ease;
+  }
+@keyframes slideBox{
+    0%{
+        opacity: 0;
+        width: 50%;
+    }
+    100%{
+        opacity: 1;
+        width: 100%;
+    }
+}
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-40px);
+       
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes fadeInUp{
+    0%{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes fadeInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(40px);
+       
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* responsive settings */
+@media (min-width: 300px) {
+    .btnr, .btnrs{
+        padding: 14px 20px;
+        font-size: 13px;
+    }
+}

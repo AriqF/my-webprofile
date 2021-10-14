@@ -1,0 +1,136 @@
+@import url("fonts.css");
+body{
+    position: relative;
+}
+/* profile section */
+#profile-header{
+    padding-top: 80px;
+    padding-left: 52px;
+    padding-right: 52px;
+    margin-bottom: 40px;
+}
+#img-section img{
+    border-radius: 5px;
+}
+
+#text-section h2{
+    color: #fff;
+    font-size: 52px;
+}
+#text-section p{
+    font-size: 16px;
+}
+
+/* project section */
+#projects{
+    margin-top: 50px;
+    padding-top: 20px;
+    padding: 50px;
+}
+#tag-container{
+    font-size: 16px;
+    margin-top: 8px !important;
+    margin-bottom: 6px !important;
+}
+.tag{
+    margin-right: 8px;
+}
+#projects h2{
+    font-size: 48px;
+}
+.project-img{
+    max-width: 360px;
+    max-height: 170px;
+    border-radius: 2px;
+    margin-bottom: 16px;
+}
+.project-items{
+    text-align: left !important;
+    margin: 22px 6px;
+}
+.project-items h4{
+    font-size: 28px;
+}
+.project-items p{
+    font-family: MarkPro;
+    font-size: 16px;
+}
+.box-body{
+    height: 21vh;
+    margin-bottom: 18px;
+}
+
+/* resume page */
+.table-education{
+    margin-top: 22px;
+    font-size: 20px;
+}
+.td-org{
+    width: 852px;
+}
+.td-org, .td-year{
+    color: #fff;
+}
+.subheader-resume{
+    margin-top: 56px;
+}
+.skill-box{
+    margin-bottom: 32px;
+}
+
+/* contact pages */
+#contact-page{
+    padding-top: 50px;
+    margin-top: 80px;
+}
+form .form-floating input, form .form-floating textarea{
+    background: transparent !important;
+    border-radius: 4px !important;
+    color: #fff !important;
+    margin-bottom: 20px;
+}
+form .form-floating input::placeholder, form .form-floating textarea::placeholder{
+    color: #777272 !important;
+}
+#contacts-list li{
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+#quotes h4{
+    font-size: 28px;
+    font-style: italic;
+}
+#box-right{
+    margin-top: 0;
+}
+
+/* responsive settings */
+@media (min-width: 300px) {
+    .box-body{
+        height: max-content;
+    }
+    #project-buttons .p-2{
+        padding-left: 0 !important;
+        padding: 3px !important;
+    }
+    #hi{
+        margin-top: 20px;
+    }
+    .ip{
+        font-size: 12px;
+    }
+}
+@media (min-width: 300px) and (max-width: 1200px){
+    #box-right{
+        margin-top: 32px;
+    }
+    
+}
+@media(min-width: 600px){
+    .ip{
+        font-size: 16px;
+    }
+}
+
+
+

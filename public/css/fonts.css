@@ -1,0 +1,16 @@
+@font-face { 
+    font-family: MarkPro; 
+    src: url('../fonts/MarkPro.ttf');
+}
+@font-face { 
+    font-family: MarkProBold; 
+    src: url('../fonts/MarkProBold.ttf');
+}
+@font-face { 
+    font-family: MarkProHeavy; 
+    src: url('../fonts/MarkProHeavy.ttf');
+}
+@font-face { 
+    font-family: MarkProMedium; 
+    src: url('../fonts/MarkProMedium.ttf');
+}
